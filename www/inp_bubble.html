@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+	     
+			
+<script>
+
+// SIMPLE FUNCTION TO ACCEPT THE SIZE OF NUMBERS AND SORT THE NUMBERS IN DESCENDING ORDER
+function bubbleSort()
+
+{
+	var start = new Date().getTime();
+	 var Num = document.numbers.input.value;
+	var a=[];
+	
+		for(var j=1;j<=Num; j++)
+		{
+			a[j]=j;
+			}
+			     
+        for (var i=1; i <=Num; i++){
+		for (var j=1; j <=(Num-i); j++) {
+            if (a[j] < a[j+1]) {
+                var temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+			    }
+            }
+        }
+    
+       for (var i=1; i <=Num; i++){
+            document.write(a[i] + " ");
+			
+  }
+  var end = new Date().getTime();
+var time = end - start;
+alert("The input size is: " + Num.length + "\n Sorting for "+ Num+" numbers was done in \n"  + time + "  millisecondes"); 
+}
+</script>
+
+ </head>
+
+
+    <body>
+			<div data-role="main-page">
+				<div data-role=header data-theme="b">
+							<a data-rel="back" data-direction="reverse" href="mainPage" data-icon="back">Back</a>
+							<a href="#" id="refresh" data-icon="refresh" class="ui-btn-right" data-position="right">Refresh</a>
+							    <h1>Bubble Sort</h1>
+							  </div>
+					<div data-role="content">
+		        <form name="numbers">
+		             Enter Number:<br> <input type="text" name="input" /> 
+		            <input type="button" value="Sort Numbers" onclick="bubbleSort()" />
+
+		        </form>
+						<div>
+			<div>
+      
+   <!--reload page on device ready-->
+	    <script src="scripts/js/reloadpage.js"></script>
+        <script src="components/loader.js"></script>
+<script src="js/memo.js"></script>
+<script src="js/app.js"></script>
+<script src="js/cssua.min.js"></script>
+    </body>
+
+
+</html>
