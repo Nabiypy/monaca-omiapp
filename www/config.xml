@@ -10,10 +10,11 @@
     <name>PhoneGap App</name>
 
     <description>
-        An example for phonegap build docs. 
+        A hybrid mobile app to read the processing speed on iOS, android and windows 8.
+        An example for phonegap build docs.
     </description>
 
-    <author href="https://build.phonegap.com" email="nabiyp@gmail.com">
+    <author href="https://build.phonegap.com" email="omiigh40@yahoo.com">
 			Michael Opoku
     </author>
 

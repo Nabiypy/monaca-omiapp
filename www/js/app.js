@@ -71,3 +71,12 @@ function onReady() {
 
 $(onReady); // on DOMContentLoaded
 
+//numbers only
+
+
+//Reload page
+$(document).ready(function() {
+    $('#refresh').click(function() {
+        location.reload();
+    });
+});
